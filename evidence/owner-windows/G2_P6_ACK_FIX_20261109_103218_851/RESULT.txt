@@ -1,0 +1,4 @@
+ACK_FAULT_BUTTON=PATCHED
+BUILD=PASS
+BEHAVIOR=Deliver one batch without acknowledgement; pause simulated connection
+BROWSER_ACK_RETRY_TEST=PENDING

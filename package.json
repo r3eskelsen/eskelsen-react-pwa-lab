@@ -1,0 +1,26 @@
+{
+  "name": "eskelsen-react-pwa-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent React offline-first PWA demonstration.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build && node scripts/build-sw.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "node --import tsx --test tests/sync-engine.test.mjs tests/sync-storage.test.ts tests/sync-conflicts.test.ts"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "fake-indexeddb": "6.2.8",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.6"
+  }
+}

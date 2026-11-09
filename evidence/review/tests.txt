@@ -1,0 +1,33 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> eskelsen-react-pwa-lab@0.1.0 test
+> node --import tsx --test tests/sync-engine.test.mjs tests/sync-storage.test.ts tests/sync-conflicts.test.ts
+
+▶ persistent conflict resolution safeguards
+  ✔ keep local resubmits with a new ID and archives the decision (25.591187ms)
+  ✔ use remote replaces only the conflicting task and archives discarded edits (21.944309ms)
+  ✔ remote choice rejects stale local snapshot and preserves newer edits (6.811236ms)
+  ✔ remote changes again after local resolution produce another conflict (11.009627ms)
+✔ persistent conflict resolution safeguards (68.654731ms)
+✔ new task is accepted at revision one without mutating input (2.482479ms)
+✔ retry after lost acknowledgement does not duplicate the write (0.567497ms)
+✔ stale revision returns conflict and preserves remote data (0.213492ms)
+✔ explicit local resolution uses a new operation and current revision (0.208575ms)
+✔ deletion keeps a tombstone and rejects stale resurrection (0.436809ms)
+✔ invalid commands and operation ID payload reuse are rejected (0.785757ms)
+▶ migration and durable acknowledgement lifecycle
+  ✔ schema upgrade preserves legacy task and queued operation (6.879649ms)
+  ✔ unconfirmed acknowledgement aborts and preserves queue (5.353465ms)
+  ✔ remote commit survives missing acknowledgement and retry (2.500522ms)
+  ✔ acknowledgement does not remove a newer local edit (3.491983ms)
+  ✔ next flight sends newer edit using acknowledged revision (1.587928ms)
+  ✔ multiple edits coalesce to latest snapshot without losing deletion (12.559608ms)
+✔ migration and durable acknowledgement lifecycle (67.105371ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 538.786078

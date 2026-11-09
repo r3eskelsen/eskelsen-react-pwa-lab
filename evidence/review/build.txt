@@ -1,0 +1,22 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> eskelsen-react-pwa-lab@0.1.0 build
+> npm run typecheck && vite build && node scripts/build-sw.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> eskelsen-react-pwa-lab@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.52 kB │ gzip:  0.32 kB
+dist/assets/index-D3-RkELd.css    3.47 kB │ gzip:  1.33 kB
+dist/assets/index-BATQeEON.js   237.35 kB │ gzip: 74.49 kB
+
+✓ built in 223ms
+SERVICE_WORKER_GENERATED=8e6be9985d205380
+PRECACHE_FILE_COUNT=6
